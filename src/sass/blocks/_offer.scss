@@ -1,0 +1,20 @@
+.offer {
+  position: relative;
+  padding: 171px 0 180px 0;
+  min-height: 766px;
+  &__title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #484848;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 58px;
+  }
+  &__btn {
+    @include main-button;
+  }
+}
