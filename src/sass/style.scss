@@ -11,12 +11,13 @@
 }
 .container {
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 @import "blocks/header";
 @import "blocks/offer";
 @import "blocks/offer-bg";
+@import "blocks/accordion";
 
 @import "base/media";

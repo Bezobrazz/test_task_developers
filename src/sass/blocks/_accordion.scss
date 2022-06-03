@@ -1,0 +1,96 @@
+.accordion {
+  position: relative;
+  min-height: 703px;
+  padding: 120px 0;
+  background: $bg-color;
+  &__bg {
+    position: absolute;
+    right: 145px;
+    bottom: 92px;
+  }
+  &__title {
+    @include title-h2;
+    margin-bottom: 74px;
+  }
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;
+    color: #111111;
+    margin-bottom: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 15px 39px 15px 44px;
+    width: 100%;
+    text-align: left;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    &::before {
+      display: block;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: $second-color;
+      border-radius: 50%;
+    }
+    &::after {
+      display: block;
+      content: url(../../img/icons/chevron_down.svg);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 39px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .active {
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: 700;
+    font-size: 21px;
+    color: #000000;
+    &::before {
+      display: block;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: $main-color;
+      border-radius: 50%;
+    }
+    &::after {
+      display: block;
+      content: url(../../img/icons/chevron_up.svg);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 39px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__panel {
+    padding: 39px 70px 54px 55px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 10px;
+  }
+  &__descr {
+    border-left: 1px solid #000;
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 175%;
+    margin-bottom: 0;
+  }
+}
