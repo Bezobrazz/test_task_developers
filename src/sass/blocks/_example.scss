@@ -1,0 +1,79 @@
+.example {
+  position: relative;
+  min-height: 1749px;
+  padding: 121px 0;
+  background: $bg-color;
+  &__title {
+    @include title-h2;
+    margin-bottom: 51px;
+  }
+  &__bg1 {
+    position: absolute;
+    left: 23px;
+    top: 301px;
+    width: 130.96px;
+    height: 189.92px;
+  }
+  &__bg2 {
+    position: absolute;
+    right: 122px;
+    bottom: 124px;
+    width: 108.44px;
+    height: 108.44px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 38px;
+  }
+  &__icon {
+    position: relative;
+    width: 569px;
+    height: 447px;
+    border-radius: 15px;
+
+    &-text {
+      display: block;
+      width: 569px;
+      height: 447px;
+      text-align: center;
+      padding-top: 200px;
+      text-decoration: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: $main-color;
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+        border-radius: 15px;
+      }
+    }
+    &-title {
+      color: #fff;
+      font-weight: 700;
+      font-size: 21px;
+    }
+    &-descr {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+  &__img {
+    width: 569px;
+    height: 447px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  }
+}

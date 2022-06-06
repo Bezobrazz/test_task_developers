@@ -1,0 +1,89 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+  padding: 123px 0 128px 0;
+  min-height: 908px;
+  &__bg1 {
+    position: absolute;
+    left: 187px;
+    top: 129px;
+    width: 67.39px;
+    height: 67.39px;
+  }
+  &__bg2 {
+    position: absolute;
+    right: 186px;
+    bottom: 47px;
+    width: 190px;
+    height: 70px;
+  }
+  &__title {
+    @include title-h2;
+    margin-bottom: 82px;
+  }
+  &__card {
+    min-width: 0;
+    width: 694px;
+    height: 391px;
+    border-radius: 10px;
+    border: $main-color 2px solid;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 57px 20px 51px 71px;
+    &-title {
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 125%;
+      margin-bottom: 29px;
+    }
+    &-descr {
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+  .slick-slider {
+    position: relative;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-list {
+    position: absolute;
+    overflow: hidden;
+    width: 1570px;
+  }
+  .slick-slide {
+    margin-right: 25px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 450px;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border: 2px solid $main-color;
+    border-radius: 15px;
+    display: flex;
+    gap: 30px;
+  }
+  .slick-prev {
+    background: url(../../img/icons/prev.svg) center no-repeat;
+    left: 50%;
+    transform: translateX(calc(-50% - 48px));
+    &:active {
+      background: url(../../img/icons/prev-white.svg) center no-repeat
+        $main-color;
+    }
+  }
+  .slick-next {
+    background: url(../../img/icons/next.svg) center no-repeat;
+    right: 50%;
+    transform: translateX(calc(+50% + 48px));
+    &:active {
+      background: url(../../img/icons/next-white.svg) center no-repeat
+        $main-color;
+    }
+  }
+}
