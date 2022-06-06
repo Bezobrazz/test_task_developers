@@ -33,3 +33,10 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$(document).ready(function () {
+  $(".slider__wrapper").slick({
+    slidesToShow: 2,
+    variableWidth: true,
+  });
+});
