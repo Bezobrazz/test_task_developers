@@ -21,18 +21,18 @@
     width: 108.44px;
     height: 108.44px;
   }
-  &__wrapper {
+  &__track {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 38px;
+    column-gap: 22px;
   }
   &__icon {
     position: relative;
     width: 569px;
     height: 447px;
     border-radius: 15px;
-
     &-text {
       display: block;
       width: 569px;
@@ -74,6 +74,35 @@
       height: 100%;
       border-radius: 15px;
       object-fit: cover;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    gap: 106px;
+    display: none;
+
+    &_prev {
+      width: 60px;
+      height: 60px;
+      border: 2px solid $main-color;
+      border-radius: 15px;
+      background: url(../../img/icons/prev.svg) center no-repeat;
+      &:active {
+        background: url(../../img/icons/prev-white.svg) center no-repeat
+          $main-color;
+      }
+    }
+    &_next {
+      width: 60px;
+      height: 60px;
+      border: 2px solid $main-color;
+      border-radius: 15px;
+      background: url(../../img/icons/next.svg) center no-repeat;
+      &:active {
+        background: url(../../img/icons/next-white.svg) center no-repeat
+          $main-color;
+      }
     }
   }
 }
