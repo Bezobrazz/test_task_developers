@@ -39,7 +39,6 @@ $(document).ready(function () {
     slidesToShow: 2,
     variableWidth: true,
   });
-<<<<<<< HEAD
 
   // Example slider-----------------------------------
   // let position = 0;
@@ -93,6 +92,4 @@ $(document).ready(function () {
       }
       sliderShop.style.left = -offset + "px";
     });
-=======
->>>>>>> master
 });
