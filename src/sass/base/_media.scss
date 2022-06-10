@@ -137,6 +137,28 @@
       }
     }
   }
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 23px;
+    }
+    &__social {
+      &-wrapper {
+        display: none;
+        &_mobile {
+          display: flex;
+        }
+      }
+    }
+
+    &__phone {
+      margin-bottom: 65px;
+    }
+    &__email {
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -208,6 +230,7 @@
     }
     &__title {
       font-size: 27px;
+      color: #000;
     }
     &__descr {
       max-width: 335px;
@@ -281,8 +304,9 @@
       margin-bottom: 5px;
       font-size: 17px;
     }
-    &_card-descr {
+    &__card-descr {
       font-size: 17px;
+      line-height: 175%;
     }
     .slick-prev {
       left: 40%;
@@ -314,6 +338,14 @@
       justify-content: flex-start;
       transition: all ease 1s;
     }
+    &__icon {
+      &-title {
+        font-size: 17px;
+      }
+      &-descr {
+        font-size: 17px;
+      }
+    }
     &__btn {
       display: flex;
     }
@@ -335,8 +367,9 @@
       margin-bottom: 27px;
     }
     &__descr {
-      font-size: 17px;
+      font-size: 16px;
       text-align: start;
+      line-height: 175%;
     }
     &__btn {
       width: 100%;
@@ -349,7 +382,7 @@
       margin-bottom: 17px;
     }
     &__descr {
-      font-size: 17px;
+      font-size: 16px;
     }
     &__feed {
       input {
@@ -364,6 +397,33 @@
     }
     &__img {
       display: block;
+    }
+  }
+  .footer {
+    padding: 46px 0 150px 0;
+    &__logo {
+      width: 280px;
+    }
+    &__phone {
+      padding: 0;
+      &-items {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+    &__email,
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    &__email {
+      align-self: flex-start;
+      margin-left: 59px;
     }
   }
 }
