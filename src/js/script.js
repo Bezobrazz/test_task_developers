@@ -34,42 +34,14 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// Slick slider
 $(document).ready(function () {
   $(".slider__wrapper").slick({
     slidesToShow: 2,
     variableWidth: true,
   });
 
-  // Example slider-----------------------------------
-  // let position = 0;
-  // const slidesToShow = 1;
-  // const slidesToScroll = 1;
-  // const container = $(".example__wrapper");
-  // const track = $(".example__track");
-  // const item = $(".example__icon");
-  // const btnPrev = $(".example__btn_prev");
-  // const btnNext = $(".example__btn_next");
-  // const itemWidth = container.width() / slidesToShow;
-  // const movePosition = slidesToScroll * itemWidth;
-
-  // item.each(function (index, item) {
-  //   $(item).css({
-  //     minWidth: itemWidth,
-  //   });
-  // });
-
-  // btnPrev.click(function () {
-  //   position += movePosition;
-  //   track.css({
-  //     transforme: `translateX(${movePosition}px)`,
-  //   });
-  // });
-  // btnNext.click(function () {
-  //   position -= movePosition;
-  //   track.css({
-  //     transforme: `translateX(${movePosition}px)`,
-  //   });
-  // });
+  // Example mobile slider
   let offset = 0;
   const sliderShop = document.querySelector(".example__track");
 
