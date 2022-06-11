@@ -29,6 +29,12 @@
       cursor: pointer;
       padding: 10px 0;
       height: 37px;
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
   &__menu-mobile {
